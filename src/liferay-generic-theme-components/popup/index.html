@@ -1,0 +1,31 @@
+[#assign isEdit=false]
+[#assign isEdit=false]
+[#if themeDisplay.isSignedIn()]
+[#assign req = request.getRequest()]
+[#assign originalRequest = portalUtil.getOriginalServletRequest(req)]
+[#if originalRequest.getParameter("p_l_mode")??]
+[#assign isEdit=true]
+[/#if]
+[/#if]
+
+<!-- Magnific Popup core CSS file -->
+<link rel="stylesheet" href="[resources:magnific-popup.css]">
+<!-- Magnific Popup core JS file -->
+<script src="[resources:jquery.magnific-popup.js]"></script>
+[#assign css = "white-popup mfp-hide marketing_campaign"]
+[#if isEdit]
+[#assign css = "p-8"]
+[/#if]
+<div id="marketing_campaign" class="${css}">
+  <lfr-drop-zone></lfr-drop-zone>
+</div>
+[#if !isEdit]
+<script>
+  $.magnificPopup.open({
+    items: {
+      src: '.marketing_campaign',
+      type: 'inline'
+    }
+  });
+</script>
+[/#if]
