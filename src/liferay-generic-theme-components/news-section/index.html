@@ -1,0 +1,27 @@
+<!-- Blog Area Start -->
+<section class="roberto-blog-area section-padding-100-0">
+  <div class="container">
+    <div class="row">
+      <!-- Section Heading -->
+      <div class="col-12">
+        <div class="section-heading text-center wow fadeInUp" data-wow-delay="100ms">
+          <h6 data-lfr-editable-id="header" data-lfr-editable-type="text">Our Blog</h6>
+          <h2 data-lfr-editable-id="sub-header" data-lfr-editable-type="text">Latest News &amp; Event</h2>
+        </div>
+      </div>
+    </div>
+    <div class="row drop-zone-news">
+      <lfr-drop-zone></lfr-drop-zone>
+    </div>
+  </div>
+</section>
+<!-- Blog Area End -->
+<script>
+  $(document).ready(function(){
+    $(".drop-zone-news>div").addClass("autofit-float autofit-padded-no-gutters-x autofit-row w-100");
+  });
+  $(".drop-zone-news>div>div").each(function(){
+    $(this).attr("class","");
+    $(this).addClass("autofit-col col-30 m-1 autofit-col-expand");
+  });
+</script>

@@ -1,0 +1,28 @@
+<script src="[resources:popper.min.js]"></script>
+<!-- Bootstrap -->
+<script src="[resources:bootstrap.min.js]"></script>
+<!-- All Plugins -->
+<script src="[resources:roberto.bundle.js]"></script>
+<!-- Active -->
+<script src="[resources:active.js]"></script>
+<script>
+  $(document).ready(function(){
+    $('#preloader').fadeOut('1000', function () {
+      $(this).remove();
+    });
+  });
+</script>
+[#assign isEdit=false]
+[#if themeDisplay.isSignedIn()]
+[#assign req = request.getRequest()]
+[#assign originalRequest = portalUtil.getOriginalServletRequest(req)]
+[#if originalRequest.getParameter("p_l_mode")??]
+[#assign isEdit=true]
+[/#if]
+[/#if]
+
+[#if isEdit]
+<div class="alert alert-info p-4">
+  Footer Resources Area
+</div>
+[/#if]

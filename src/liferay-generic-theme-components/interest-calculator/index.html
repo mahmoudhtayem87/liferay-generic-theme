@@ -1,0 +1,90 @@
+<script>
+  function updateFrequancy(array, keyword) {
+    cookieFound = false;
+    for (var index = 0; index < array.length; index++) {
+      if (keyword == array[index].keyword) {
+        array[index].frequancy = array[index].frequancy + 1;
+        cookieFound = true;
+      }
+    }
+    if (!cookieFound) {
+      array.push({
+        keyword: keyword,
+        frequancy: 1
+      });
+    }
+    return array;
+  }
+
+  function calculateSegmentInterest() {
+    var keywords = $('meta[name="keywords"]').attr("content");
+    var keywordsArray = keywords.split(',');
+    var keywordsFreqCookie = getCookie("keywordsFreqCookie");
+    if (keywordsFreqCookie != "") {
+      keywordsFreqCookie = JSON.parse(getCookie("keywordsFreqCookie"));
+    } else {
+      keywordsFreqCookie = [];
+    }
+    var keywordsFreq = [];
+    if (keywordsArray.length > 0) {
+      for (var index = 0; index < keywordsArray.length; index++) {
+        keywordsFreqCookie = updateFrequancy(keywordsFreqCookie, keywordsArray[index]);
+      }
+    }
+    //calculate intrest
+    var currentMax = keywordsFreqCookie[0];
+    for (var index = 1; index < keywordsFreqCookie.length; index++) {
+      if (keywordsFreqCookie[index].frequancy > currentMax.frequancy) {
+        currentMax = keywordsFreqCookie[index];
+      }
+    }
+    setCookie("interest", currentMax.keyword);
+    setCookie("keywordsFreqCookie", JSON.stringify(keywordsFreqCookie), 10);
+  }
+
+  function setCookie(cname, cvalue, exdays) {
+    const d = new Date();
+    d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+    let expires = "expires=" + d.toUTCString();
+    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+  }
+
+  function getCookie(cname) {
+    let name = cname + "=";
+    let ca = document.cookie.split(';');
+    for (let i = 0; i < ca.length; i++) {
+      let c = ca[i];
+      while (c.charAt(0) == ' ') {
+        c = c.substring(1);
+      }
+      if (c.indexOf(name) == 0) {
+        return c.substring(name.length, c.length);
+      }
+    }
+    return "";
+  }
+
+  function deleteCookie(name) {
+    document.cookie = name + '=; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+  }
+
+  function clearCookies() {
+    deleteCookie("interest");
+    deleteCookie("keywordsFreqCookie");
+    return true;
+  }
+  try{
+    calculateSegmentInterest();
+  }
+  catch(exp)
+  {
+  }
+
+</script>
+<div class="fragment_floating_cookies_clear" onclick="clearCookies()">
+  <div style="width:5vw;height:5vw" class=" d-flex floating">
+    <div class=" m-auto ">
+      <lfr-editable id="Back" type="text">Clear</lfr-editable>
+    </div>
+  </div>
+</div>

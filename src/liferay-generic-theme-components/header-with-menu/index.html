@@ -1,0 +1,102 @@
+<!-- Preloader -->
+<div id="preloader">
+  <div class="loader"></div>
+</div>
+<!-- /Preloader -->
+<!-- Header Area Start -->
+<header class="header-area">
+  <!-- Search Form -->
+  <div class="search-form d-flex align-items-center">
+    <div class="container search-bar-custom">
+      [@liferay.search_bar /]
+    </div>
+  </div>
+  <!-- Top Header Area Start -->
+  <div class="top-header-area">
+    <div class="container">
+      <div class="row">
+        <div class="col-6">
+          <div class="top-header-content">
+            <a href="#"><i class="fa fa-phone"></i> <span data-lfr-editable-id="contact-number" data-lfr-editable-type="text">(123) 456-789-1230</span></a>
+            <a href="#"><i class="fa fa-envelope"></i> <span data-lfr-editable-id="contact-email" data-lfr-editable-type="text">info.colorlib@gmail.com</span></a>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="top-header-content">
+            <!-- Top Social Area -->
+            <div class="top-social-area ml-auto">
+              <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+              <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+              <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+              <a>[@liferay.languages /]</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Top Header Area End -->
+  <!-- Main Header Start -->
+  <div class="main-header-area">
+    <div class="classy-nav-container breakpoint-off bg-primary">
+      <div class="container">
+        <!-- Classy Menu -->
+        <nav class="classy-navbar justify-content-between" id="robertoNav">
+          <!-- Logo -->
+          <a class="nav-brand" href="${themeDisplay.getURLHome()}">${company.name}</a>
+          <!-- Navbar Toggler -->
+          <div class="classy-navbar-toggler">
+            <span class="navbarToggler"><span></span><span></span><span></span></span>
+          </div>
+          <!-- Menu -->
+          <div class="classy-menu">
+            <!-- Menu Close Button -->
+            <div class="classycloseIcon">
+              <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+            </div>
+            <!-- Nav Start -->
+            <div class="classynav">
+              [#attempt]
+              [#assign navMenuID = configuration.navigationMenu?number]
+              [#assign templateId = configuration.navigationMenuTemplate?number]
+              [#assign ddmTemplateLocalService =
+              serviceLocator.findService("com.liferay.dynamic.data.mapping.service.DDMTemplateLocalService")]
+              [#assign template = ddmTemplateLocalService.fetchDDMTemplate(templateId)]
+              [#assign siteNavigationMenuLocalService =
+              serviceLocator.findService("com.liferay.site.navigation.service.SiteNavigationMenuLocalService")]
+              [#assign navigationMenu = siteNavigationMenuLocalService.fetchSiteNavigationMenu(navMenuID)]
+              [@liferay_site_navigation["navigation-menu"]
+              ddmTemplateGroupId=template.groupId
+              ddmTemplateKey=template.templateKey
+              displayDepth=1
+              expandedLevels="auto"
+              rootItemType="absolute"
+              rootItemLevel=0
+              siteNavigationMenuId=navigationMenu.siteNavigationMenuId /]
+              [#recover]
+              <li class="nav-item">
+											<span class="nav-link">
+                            <small>Menu is temporarily unavailable.</small>
+											</span>
+              </li>
+              [/#attempt]
+              <!-- Search -->
+              <div class="search-btn ml-4">
+                <i class="fa fa-search" aria-hidden="true"></i>
+              </div>
+              <!-- Book Now -->
+              <div class="book-now-btn ml-3 ml-lg-5">
+                <a href="#">Book Now <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+              </div>
+              <div class="personal_bar mx-4">
+                [@liferay.user_personal_bar /]
+              </div>
+            </div>
+            <!-- Nav End -->
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
+<!-- Header Area End -->

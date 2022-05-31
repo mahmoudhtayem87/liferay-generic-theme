@@ -1,0 +1,32 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lavishly+Yours&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/600dcc4576.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="[resources:animate.css]" type="text/css">
+<link rel="stylesheet" href="[resources:classy-nav.css]" type="text/css">
+<link rel="stylesheet" href="[resources:owl.carousel.min.css]" type="text/css">
+<link rel="stylesheet" href="[resources:magnific-popup.css]" type="text/css">
+<link rel="stylesheet" href="[resources:nice-select.css]" type="text/css">
+<link rel="stylesheet" href="[resources:font-awesome.min.css]" type="text/css">
+<link rel="stylesheet" href="[resources:substyle.css]" type="text/css">
+<link rel="stylesheet" href="[resources:jquery-ui.min.css]" type="text/css">
+<link rel="stylesheet" href="[resources:style.css]" type="text/css">
+
+[#assign isEdit=false]
+[#assign isEdit=false]
+[#if themeDisplay.isSignedIn()]
+[#assign req = request.getRequest()]
+[#assign originalRequest = portalUtil.getOriginalServletRequest(req)]
+[#if originalRequest.getParameter("p_l_mode")??]
+[#assign isEdit=true]
+[/#if]
+[/#if]
+
+[#if isEdit]
+<div class="alert alert-info p-4">
+  Header Resources Area
+</div>
+[/#if]

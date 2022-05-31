@@ -1,0 +1,36 @@
+.custom-form-container .ddm-field
+{
+  padding:1rem!important;
+}
+.custom-form-container .ddm-field input
+{
+  width:inherit!important;
+  margin-bottom:inherit!important;
+  padding:1rem!important;
+}
+.custom-form-container .ddm-field .form-control
+{
+  width:inherit!important;
+  margin-bottom:inherit!important;
+  padding:1rem!important;
+}
+.custom-form-container .lfr-ddm-form-page>p
+{
+  display:none;
+}
+.custom-form-container .lfr-ddm-form-pagination-controls
+{
+  display: inline-block!important;
+  position: absolute;
+  top: -4rem;
+  right: 0rem;
+  padding: 0!important;
+}
+.custom-form-container .btn-unstyled
+{
+  display:flex!important;
+}
+.custom-form-container  .lfr-ddm__default-page-header
+{
+  display: none!important;
+}

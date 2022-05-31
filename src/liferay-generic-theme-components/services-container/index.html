@@ -1,0 +1,19 @@
+<!-- Service Area Start -->
+<div class="roberto-service-area">
+  <div class="container">
+    <div class="service-content drop-zone-services d-flex align-items-center justify-content-center">
+      <lfr-drop-zone></lfr-drop-zone>
+    </div>
+  </div>
+</div>
+<!-- Service Area End -->
+
+<script>
+  $(document).ready(function(){
+    $(".drop-zone-services>div").addClass("autofit-float autofit-padded-no-gutters-x autofit-row w-100");
+  });
+  $(".drop-zone-services>div>div").each(function(){
+    $(this).attr("class","");
+    $(this).addClass("autofit-col col-20 m-1 autofit-col-expand");
+  });
+</script>

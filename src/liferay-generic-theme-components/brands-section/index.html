@@ -1,0 +1,22 @@
+<!-- Partner Area Start -->
+<div class="partner-area">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="drop-zone-brands partner-logo-content d-flex align-items-center justify-content-between wow fadeInUp" data-wow-delay="300ms">
+          <lfr-drop-zone></lfr-drop-zone>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Partner Area End -->
+<script>
+  $(document).ready(function(){
+    $(".drop-zone-brands>div").addClass("autofit-float autofit-padded-no-gutters-x autofit-row w-100 justify-content-between");
+  });
+  $(".drop-zone-brands>div>div").each(function(){
+    $(this).attr("class","");
+    $(this).addClass("autofit-col");
+  });
+</script>
