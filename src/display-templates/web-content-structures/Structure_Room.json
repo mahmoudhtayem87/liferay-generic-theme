@@ -1,0 +1,449 @@
+{
+  "availableLanguageIds": [
+    "en_US"
+  ],
+  "contentType": "journal",
+  "dataDefinitionFields": [
+    {
+      "customProperties": {
+        "labelAtStructureLevel": true,
+        "confirmationErrorMessage": {
+          "en_US": ""
+        },
+        "hideField": false,
+        "autocomplete": false,
+        "ddmDataProviderInstanceId": [],
+        "dataType": "string",
+        "tooltip": {
+          "en_US": ""
+        },
+        "requireConfirmation": false,
+        "displayStyle": "singleline",
+        "fieldNamespace": "",
+        "visibilityExpression": "",
+        "ddmDataProviderInstanceOutput": [],
+        "options": {},
+        "nativeField": false,
+        "confirmationLabel": {
+          "en_US": ""
+        },
+        "fieldReference": "Size",
+        "placeholder": {
+          "en_US": ""
+        },
+        "dataSourceType": "",
+        "direction": [
+          "vertical"
+        ]
+      },
+      "defaultValue": {},
+      "fieldType": "text",
+      "indexType": "keyword",
+      "indexable": true,
+      "label": {
+        "en_US": "Size"
+      },
+      "localizable": true,
+      "name": "Text69408252",
+      "nestedDataDefinitionFields": [],
+      "readOnly": false,
+      "repeatable": false,
+      "required": true,
+      "showLabel": true,
+      "tip": {
+        "en_US": ""
+      }
+    },
+    {
+      "customProperties": {
+        "labelAtStructureLevel": true,
+        "confirmationErrorMessage": {
+          "en_US": ""
+        },
+        "hideField": false,
+        "autocomplete": false,
+        "ddmDataProviderInstanceId": [],
+        "dataType": "string",
+        "tooltip": {
+          "en_US": ""
+        },
+        "requireConfirmation": false,
+        "displayStyle": "singleline",
+        "fieldNamespace": "",
+        "visibilityExpression": "",
+        "ddmDataProviderInstanceOutput": [],
+        "options": {},
+        "nativeField": false,
+        "confirmationLabel": {
+          "en_US": ""
+        },
+        "fieldReference": "Capacity",
+        "placeholder": {
+          "en_US": ""
+        },
+        "dataSourceType": "",
+        "direction": [
+          "vertical"
+        ]
+      },
+      "defaultValue": {},
+      "fieldType": "text",
+      "indexType": "keyword",
+      "indexable": true,
+      "label": {
+        "en_US": "Capacity"
+      },
+      "localizable": true,
+      "name": "Text40688685",
+      "nestedDataDefinitionFields": [],
+      "readOnly": false,
+      "repeatable": false,
+      "required": true,
+      "showLabel": true,
+      "tip": {
+        "en_US": ""
+      }
+    },
+    {
+      "customProperties": {
+        "labelAtStructureLevel": true,
+        "confirmationErrorMessage": {
+          "en_US": ""
+        },
+        "hideField": false,
+        "autocomplete": false,
+        "ddmDataProviderInstanceId": [],
+        "dataType": "string",
+        "tooltip": {
+          "en_US": ""
+        },
+        "requireConfirmation": false,
+        "displayStyle": "singleline",
+        "fieldNamespace": "",
+        "visibilityExpression": "",
+        "ddmDataProviderInstanceOutput": [],
+        "options": {},
+        "nativeField": false,
+        "confirmationLabel": {
+          "en_US": ""
+        },
+        "fieldReference": "Bed",
+        "placeholder": {
+          "en_US": ""
+        },
+        "dataSourceType": "",
+        "direction": [
+          "vertical"
+        ]
+      },
+      "defaultValue": {},
+      "fieldType": "text",
+      "indexType": "keyword",
+      "indexable": true,
+      "label": {
+        "en_US": "Bed"
+      },
+      "localizable": true,
+      "name": "Text32432165",
+      "nestedDataDefinitionFields": [],
+      "readOnly": false,
+      "repeatable": false,
+      "required": true,
+      "showLabel": true,
+      "tip": {
+        "en_US": ""
+      }
+    },
+    {
+      "customProperties": {
+        "labelAtStructureLevel": true,
+        "confirmationErrorMessage": {
+          "en_US": ""
+        },
+        "hideField": false,
+        "autocomplete": false,
+        "ddmDataProviderInstanceId": [],
+        "dataType": "string",
+        "tooltip": {
+          "en_US": ""
+        },
+        "requireConfirmation": false,
+        "displayStyle": "singleline",
+        "fieldNamespace": "",
+        "visibilityExpression": "",
+        "ddmDataProviderInstanceOutput": [],
+        "options": {},
+        "nativeField": false,
+        "confirmationLabel": {
+          "en_US": ""
+        },
+        "fieldReference": "Text10514283",
+        "placeholder": {
+          "en_US": ""
+        },
+        "dataSourceType": "",
+        "direction": [
+          "vertical"
+        ]
+      },
+      "defaultValue": {},
+      "fieldType": "text",
+      "indexType": "keyword",
+      "indexable": true,
+      "label": {
+        "en_US": "Price Per Night"
+      },
+      "localizable": true,
+      "name": "Text10514283",
+      "nestedDataDefinitionFields": [],
+      "readOnly": false,
+      "repeatable": false,
+      "required": true,
+      "showLabel": true,
+      "tip": {
+        "en_US": ""
+      }
+    },
+    {
+      "customProperties": {
+        "labelAtStructureLevel": true,
+        "fieldNamespace": "",
+        "visibilityExpression": "",
+        "inline": true,
+        "dataType": "string",
+        "options": {
+          "en_US": [
+            {
+              "reference": "Option45961432",
+              "label": "Air Conditioning",
+              "value": "Option45961432"
+            },
+            {
+              "reference": "Option66764645",
+              "label": "Free Drinks",
+              "value": "Option66764645"
+            },
+            {
+              "reference": "Option00645310",
+              "label": "Restaurant Quality",
+              "value": "Option00645310"
+            },
+            {
+              "reference": "Option48110967",
+              "label": "Service 24/24",
+              "value": "Option48110967"
+            },
+            {
+              "reference": "Option16915326",
+              "label": "Cable TV",
+              "value": "Option16915326"
+            },
+            {
+              "reference": "Option58899618",
+              "label": "Unlimited Wifi",
+              "value": "Option58899618"
+            }
+          ]
+        },
+        "nativeField": false,
+        "fieldReference": "MultipleSelection57785779",
+        "showAsSwitcher": true
+      },
+      "defaultValue": {},
+      "fieldType": "checkbox_multiple",
+      "indexType": "keyword",
+      "indexable": true,
+      "label": {
+        "en_US": "Services"
+      },
+      "localizable": true,
+      "name": "MultipleSelection57785779",
+      "nestedDataDefinitionFields": [],
+      "readOnly": false,
+      "repeatable": false,
+      "required": false,
+      "showLabel": true,
+      "tip": {
+        "en_US": ""
+      }
+    },
+    {
+      "customProperties": {
+        "fieldNamespace": "",
+        "visibilityExpression": "",
+        "dataType": "string",
+        "fieldReference": "Details"
+      },
+      "defaultValue": {},
+      "fieldType": "rich_text",
+      "indexType": "text",
+      "indexable": true,
+      "label": {
+        "en_US": "Details"
+      },
+      "localizable": true,
+      "name": "RichText69546506",
+      "nestedDataDefinitionFields": [],
+      "readOnly": false,
+      "repeatable": false,
+      "required": true,
+      "showLabel": true,
+      "tip": {
+        "en_US": ""
+      }
+    },
+    {
+      "customProperties": {
+        "fieldNamespace": "",
+        "requiredErrorMessage": {
+          "en_US": ""
+        },
+        "visibilityExpression": "",
+        "objectFieldName": "",
+        "dataType": "image",
+        "requiredDescription": true,
+        "fieldReference": "Image95589128"
+      },
+      "defaultValue": {
+        "en_US": {}
+      },
+      "fieldType": "image",
+      "indexType": "text",
+      "indexable": true,
+      "label": {
+        "en_US": "Room Main Photo"
+      },
+      "localizable": true,
+      "name": "Image95589128",
+      "nestedDataDefinitionFields": [],
+      "readOnly": false,
+      "repeatable": false,
+      "required": false,
+      "showLabel": true,
+      "tip": {
+        "en_US": ""
+      }
+    },
+    {
+      "customProperties": {
+        "fieldNamespace": "",
+        "visibilityExpression": "",
+        "dataType": "image",
+        "requiredDescription": false,
+        "fieldReference": "Image22381867"
+      },
+      "defaultValue": {},
+      "fieldType": "image",
+      "indexType": "text",
+      "indexable": true,
+      "label": {
+        "en_US": "Room Photos"
+      },
+      "localizable": true,
+      "name": "Image22381867",
+      "nestedDataDefinitionFields": [],
+      "readOnly": false,
+      "repeatable": true,
+      "required": true,
+      "showLabel": true,
+      "tip": {
+        "en_US": ""
+      }
+    }
+  ],
+  "defaultDataLayout": {
+    "dataLayoutFields": {},
+    "dataLayoutPages": [
+      {
+        "dataLayoutRows": [
+          {
+            "dataLayoutColumns": [
+              {
+                "columnSize": 3,
+                "fieldNames": [
+                  "Text69408252"
+                ]
+              },
+              {
+                "columnSize": 3,
+                "fieldNames": [
+                  "Text40688685"
+                ]
+              },
+              {
+                "columnSize": 3,
+                "fieldNames": [
+                  "Text32432165"
+                ]
+              },
+              {
+                "columnSize": 3,
+                "fieldNames": [
+                  "Text10514283"
+                ]
+              }
+            ]
+          },
+          {
+            "dataLayoutColumns": [
+              {
+                "columnSize": 12,
+                "fieldNames": [
+                  "MultipleSelection57785779"
+                ]
+              }
+            ]
+          },
+          {
+            "dataLayoutColumns": [
+              {
+                "columnSize": 12,
+                "fieldNames": [
+                  "RichText69546506"
+                ]
+              }
+            ]
+          },
+          {
+            "dataLayoutColumns": [
+              {
+                "columnSize": 12,
+                "fieldNames": [
+                  "Image95589128"
+                ]
+              }
+            ]
+          },
+          {
+            "dataLayoutColumns": [
+              {
+                "columnSize": 12,
+                "fieldNames": [
+                  "Image22381867"
+                ]
+              }
+            ]
+          }
+        ],
+        "description": {
+          "en_US": ""
+        },
+        "title": {
+          "en_US": ""
+        }
+      }
+    ],
+    "dataRules": [],
+    "description": {},
+    "name": {
+      "en_US": "Room"
+    },
+    "paginationMode": "single-page"
+  },
+  "defaultLanguageId": "en_US",
+  "description": {},
+  "name": {
+    "en_US": "Room"
+  },
+  "storageType": "default"
+}
